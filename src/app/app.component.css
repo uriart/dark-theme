@@ -1,26 +1,19 @@
-.container {
-    width: 100%;
-    height: 100%;
+#container {
+    height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    background: radial-gradient(closest-side, #444242, #2B2B2B);
-    color: #C5CED1;
 }
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    width: 100vw;
+    text-align: center;
     height: 100vh;
     scroll-snap-align: start;
-    scroll-behavior: smooth;
-    text-align: center;
 }
 
 img {
-    display: scroll;
     position: fixed; 
     bottom: 2vw; 
     right: 2vw;

@@ -1,0 +1,12 @@
+div.card {
+    width: 20vw;
+    height: 30vh;
+    border: solid;
+    border-color: black;
+    margin: 5vw;
+    box-shadow: 6px 20px 10px black;
+}
+
+.cards {
+    display: flex;
+}

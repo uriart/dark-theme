@@ -1,7 +1,7 @@
-header {
-	position : absolute;
+:host {
+	position : fixed;
 	width: 100vw;
-	top : 0px;
+	top : 0;
 }
 
 ul {
@@ -15,14 +15,14 @@ ul {
 li {
 	list-style: none;
     margin-inline: 1vw;
-    border-radius: 70%;
+    border-radius: 50%;
 }
 
 a {
     color: #C5CED1;
     text-decoration: none;
     display: block;
-    padding: 1vw 2vw;
+    padding: 0.5vw 1vw;
     font-weight: bold;
 }
 
@@ -32,15 +32,4 @@ li:hover {
 }
 a:hover {
     transition-duration: 1s;
-}
-
-.headroom {
-    will-change: transform;
-    transition: transform 0.3s linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
 }

@@ -17,6 +17,10 @@ h2 {
     padding: 0.2em 0;
 }
 
+h1, h2 {
+    text-shadow: 10px 10px 5px #2B2B2B;
+}
+
 h2::after {
     content: '';
     position: absolute;
