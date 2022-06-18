@@ -1,9 +1,3 @@
-* {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    background: radial-gradient(closest-side, #444242, #2B2B2B);
-    color: #C5CED1;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

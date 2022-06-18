@@ -48,7 +48,7 @@ enum Direction {
 export class HeaderComponent implements AfterViewInit {
 
 
-  public isVisible = true;
+  private isVisible = true;
 
   @HostBinding('@toggle')
   get toggle(): VisibilityState {
