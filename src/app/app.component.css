@@ -1,19 +1,19 @@
-#containe {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+
+h1, h2 {
+    text-shadow: 10px 10px 5px #2B2B2B;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    scroll-snap-align: start;
+h2::after {
+    transform: scale(0);
+    animation-fill-mode: forwards;  
 }
 
-img {
-    position: fixed; 
-    bottom: 2vw; 
-    right: 2vw;
+@keyframes fadein {
+    100%  { 
+        opacity: 1; 
+        transform: translate3d(0, 0.2em, 0); 
+        transform: scale(1);
+    }
 }
+
+

@@ -1,10 +1,58 @@
-<app-header></app-header>
-<div id="containe" class="scroll-smooth h-screen">
-    <app-home></app-home>
-    <app-about></app-about>
-    <app-work></app-work>
-    <app-contact></app-contact>
+<header class="fixed w-screen top-0">
+    <nav>
+        <ul class="flex float-right justify-center items-center mt-5 mr-5">
+            <li class="rounded-full hover:duration-1000 hover:bg-cyan-700">
+                <a href="#home" class="py-2 px-5 block">Home</a>
+            </li>
+            <li class="rounded-full hover:duration-1000 hover:bg-cyan-700">
+                <a href="#about" class="py-2 px-5 block">About</a>
+            </li>
+            <li class="rounded-full hover:duration-1000 hover:bg-cyan-700">
+                <a href="#work" class="py-2 px-5 block">Work</a>
+            </li>
+            <li class="rounded-full hover:duration-1000 hover:bg-cyan-700">
+                <a href="#contact" class="py-2 px-5 block">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="main" class="scroll-smooth h-screen snap-mandatory snap-y overflow-y-auto">
+
+    <section id="home" class="flex justify-center items-center text-center h-screen snap-start">
+        <div class="relative">
+            <h1 class="text-xl">URIART</h1>
+            <h2 class="text-l tracking-widest after:absolute after:content-[''] after:bottom-0 
+                        after:left-0 after:w-full after:h-0.5 after:bg-gray-300 after:animate-[fadein_4s]">
+                Software developer
+            </h2>
+        </div>
+    </section>
+    
+    <section id="about" class="flex justify-center items-center text-center h-screen snap-start">
+        <p>Me considero una persona curiosa por naturaleza, apasionado de las nuevas tecnologías con ganas de aprender. Ambicioso pero paciente, perfeccionista pero coherente y con sentido común.
+            Titulado con el grado superior en Telecomunicaciones e Informática. Con conocimientos y experiencia en administración de sistemas informáticos en red.</p>
+    </section>
+
+    <section id="work" class="flex justify-center items-center text-center h-screen snap-start">
+        <div class="xl:w-3/4">
+            <h1>Work</h1>
+            <div class="xl:flex justify-around">
+                <div class="card shadow-2xl shadow-black mx-6 my-6 xl:w-2/5 w-80">
+                    <img src="../assets/entrenapp.jpg" alt="entrenapp" class="m-auto h-full">
+                </div>
+                <div class="card shadow-2xl shadow-black mx-6 my-6 xl:w-2/5 w-80 xl:h-96 h-64">
+                    <img src="../assets/listapp.jpg" alt="listapp" class="m-auto h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="flex justify-center items-center text-center h-screen snap-start">
+        <h1>CONTACT</h1>
+    </section>
+
     <a href="#about">
-        <img src="../assets/arrow.png" width="50" height="50" class="animate-bounce">
+        <img src="../assets/arrow.png" alt="arrow" width="50" height="50" class="fixed animate-bounce bottom-7 right-10">
     </a>
 </div>
