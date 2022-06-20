@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "uriart-portfolio": {
+    "dark-theme": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/uriart-portfolio",
+            "outputPath": "dist/dark-theme",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "uriart-portfolio:build:production"
+              "browserTarget": "dark-theme:build:production"
             },
             "development": {
-              "browserTarget": "uriart-portfolio:build:development"
+              "browserTarget": "dark-theme:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "uriart-portfolio:build"
+            "browserTarget": "dark-theme:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "uriart-portfolio"
+  "defaultProject": "dark-theme"
 }

@@ -31,7 +31,7 @@ enum Direction {
   ]
 })
 export class AppComponent implements AfterViewInit {
-  title = 'uriart-portfolio';
+  title = 'dark-theme';
 
   private isVisible = true;
 
